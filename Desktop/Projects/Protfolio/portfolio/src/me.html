@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General table styling */
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for the specific column (e.g., Description column) */
+td.scrollable {
+  max-height: 150px; /* Set a height limit for the content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  white-space: pre-wrap; /* Preserve line breaks */
+  word-wrap: break-word; /* Wrap text instead of overflowing */
+}
+
+/* Custom scrollbar styling for the scrollable column */
+td.scrollable::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+td.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light scrollbar track */
+}
+
+td.scrollable::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded thumb */
+}
+
+td.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker thumb on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2024-2025</td>
+            <td>Full Stack Development Bootcamp</td>
+            <td class="scrollable">
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+              This is a long description that will be scrollable if it exceeds the height limit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2023-2024</td>
+            <td>Data Science Course</td>
+            <td class="scrollable">
+              Another long description. Curabitur pretium tinccccccccccccccccccccccidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.
+              Another long description. Curabitur pretium tinccccccccccccccccccccccidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.
+              Another long description. Curabitur pretium tinccccccccccccccccccccccidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.
+              Another long description. Curabitur pretium tinccccccccccccccccccccccidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.
+              Another long description. Curabitur pretium tinccccccccccccccccccccccidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+</body>
+</html>

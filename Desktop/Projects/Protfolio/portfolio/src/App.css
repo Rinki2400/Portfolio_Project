@@ -1,0 +1,866 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bAckground-color: #0d2535;
+
+  --main-font-color: rgb(255, 149, 0);
+}
+.App_main {
+  background: var(--bAckground-color);
+}
+
+/* Header */
+.header_cont h1 {
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+}
+.header_box {
+  position: relative;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: gray;
+  margin-top: 20px;
+}
+.header_cont {
+  color: var(--main-font-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Info */
+.Info_container,
+.About_container,
+.certi_container,
+.progra_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info_session,
+.About_info,
+.certi_info,
+.About_info {
+  color: aliceblue;
+  width: 80%;
+  padding: 20px;
+  padding-left: 10px;
+  margin-top: 30px;
+  /* background-color: aqua; */
+}
+span {
+  color: var(--main-font-color);
+}
+.info_session h4 {
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.info_session h1 {
+  color: var(--main-font-color);
+  padding-left: 13px;
+  font-size: 55px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+
+.info_session h2 {
+  color: #f3ecda;
+  padding-left: 13px;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.para {
+  width: 750px;
+  margin-top: 40px;
+  padding-left: 13px;
+}
+button {
+  background-color: transparent;
+  color: rgb(46, 114, 169);
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-left: 13px;
+  margin-bottom: 30px;
+  border: 1px solid #007acc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #007acc;
+  color: white;
+  border-color: #005f99;
+}
+
+.vertical-btn {
+  position: fixed;
+  left: 40px;
+  top: 70%;
+  /* background-color: #34db90;  */
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.vertical-btn h3 {
+  margin: 2px;
+  padding: 3px;
+  border-radius: 50%;
+  color: white;
+}
+
+.vertical-btn::after {
+  content: ""; /* Empty content for lines */
+  position: absolute;
+  width: 2px; /* Line thickness */
+  height: 70px; /* Adjust line length as needed */
+  background-color: rgb(164, 163, 163); /* Line color */
+}
+
+.vertical-btn::after {
+  bottom: 172px; /* Position line at the bottom */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%);
+}
+
+/* Media Query for Tablets (768px or smaller) */
+@media screen and (max-width: 768px) {
+  .info_session,
+  .About_info,
+  .certi_info {
+    width: 90%; /* Adjust the width for smaller screens */
+    padding: 15px;
+  }
+
+  .para {
+    width: 100%; /* Make paragraphs more adaptive */
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .info_session h1 {
+    font-size: 45px; /* Scale down headers */
+  }
+  .info_session h2 {
+    font-size: 40px;
+  }
+  button {
+    font-size: 14px; /* Adjust button size */
+    padding: 8px 16px;
+  }
+}
+
+/* Media Query for Mobile Phones (480px or smaller) */
+@media screen and (max-width: 480px) {
+  .info_session,
+  .About_info,
+  .certi_info {
+    width: 100%; /* Full width on mobiles */
+    padding: 10px;
+  }
+
+  .info_session h1 {
+    font-size: 35px;
+  }
+  .info_session h2 {
+    font-size: 30px;
+  }
+
+  .para {
+    margin-top: 15px;
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .vertical-btn {
+    left: 20px; /* Adjust position */
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+.About_container {
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.About_info h1 {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+
+.About_line {
+  position: relative;
+  content: "";
+  width: 160px;
+  height: 2px;
+  margin-left: 60px;
+  background-color: gray;
+  margin-left: 102px;
+  margin-top: -14px;
+}
+.About_sec {
+  /* background-color: skyblue; */
+  width: 95%;
+  /* height: 40px; */
+  margin-left: 30px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.para_sec {
+  width: 500px;
+}
+.img_sec {
+  width: 400px;
+  height: 400px;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+.para_sec p {
+  margin-top: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+.technologies-container h2 {
+  padding-top: 60px;
+  margin-bottom: 30px;
+  color: rgb(46, 114, 169);
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.tech-box {
+  color: rgb(46, 114, 169);
+  padding: 10px 20px;
+  border: 1px solid #007acc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 120px;
+}
+.certi_info h1 {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+.certificate_line,
+.certi_line,
+.education_line {
+  position: relative;
+  content: "";
+  width: 160px;
+  height: 2px;
+  margin-left: 60px;
+  background-color: gray;
+  margin-left: 170px;
+  margin-top: -14px;
+}
+.certi_line {
+  right: 152px;
+  height: 240px;
+  top: -216px;
+  width: 2px;
+}
+.certification_sec {
+  /* background-color: pink; */
+  width: 1100px;
+  height: 400px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cert_name {
+  height: 200px;
+  margin: 20px;
+  margin-top: 60px;
+
+  /* background-color: #007acc; */
+}
+.certi-box {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 120px;
+  border-left: 5px solid #005f99;
+  border-top: 1px solid #005f99;
+  border-bottom: 1px solid #005f99;
+  border-right: 1px solid #005f99;
+}
+.certi-box:hover {
+  transform: scale(1.05);
+  background-color: #2b4c63;
+  border-left: 5px solid #07c3e4;
+}
+.cert_sec_info {
+  width: 804px;
+  margin-top: 104px;
+}
+.cert_sec_info h3 {
+  margin-bottom: 20px;
+  color: var(--main-font-color);
+}
+.cert_sec_info h2 {
+  margin-bottom: 20px;
+  color: #5a87a5;
+}
+.cert_sec_info p {
+  line-height: 1.6;
+}
+
+.Project_cont {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.project_info {
+  color: aliceblue;
+  width: 80%;
+  padding: 20px;
+  padding-left: 10px;
+  margin-top: 30px;
+  /* background-color: aqua; */
+}
+.project_info h1 {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+.Project_line {
+  position: relative;
+  content: "";
+  width: 140px;
+  height: 2px;
+  margin-left: 40px;
+  background-color: gray;
+  margin-left: 109px;
+  margin-top: -14px;
+}
+.sec_img {
+  width: 900px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.sec_img h3 {
+  margin-left: 100px;
+}
+.sec_img p {
+  margin-left: 100px;
+}
+.icon_img {
+  width: 160px;
+  height: 160px;
+}
+.Contact_cont {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cont_info {
+  color: aliceblue;
+  width: 80%;
+  padding: 20px;
+  padding-left: 10px;
+  margin-top: 30px;
+  /* background-color: aqua; */
+}
+.cont_info h1 {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+.count_line {
+  position: relative;
+  content: "";
+  width: 160px;
+  height: 2px;
+  margin-left: 40px;
+  background-color: gray;
+  margin-left: 149px;
+  margin-top: -14px;
+}
+/* form */
+
+.form_conatainer {
+  margin: 30px;
+  padding: 30px;
+  padding-left: 80px;
+  padding-right: 50px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_conatainer ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 2.5;
+}
+.img_conatainer img {
+  width: 500px;
+  height: 300px;
+  margin-top: -84px;
+  margin-top: -84px;
+  margin-right: -27px;
+}
+.Footer_container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.footer_info {
+  width: 100%;
+  /* background-color: #2b4c63; */
+  text-align: center;
+  padding: 50px;
+}
+.footer_info h5 {
+  color: #377eb7;
+}
+
+.footer_line {
+  position: relative;
+  content: "";
+  width: 80%;
+  height: 2px;
+  margin-left: 40px;
+  background-color: gray;
+  margin-left: 149px;
+  margin-top: -81px;
+}
+
+/* Styling for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the login form */
+.login-form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 405px;
+}
+
+/* Title of the login form */
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 10px;
+  margin: 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for the login button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for side navigation container */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  color: #fff;
+  padding-top: 20px;
+  overflow: hidden;
+
+  justify-content: center;
+}
+
+/* Profile section styling */
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.profile-name {
+  font-size: 26px;
+  margin: 10px 0 5px;
+}
+
+.profile-role {
+  font-size: 17px;
+  color: #bbb;
+}
+
+/* Links in the side navigation */
+.sidenav button {
+  padding: 7px 10px;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  color: #bbb6b6;
+  display: block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.sidenav button:hover {
+  color: #f1f1f1;
+  background-color: #575757;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.Profile_list_sec {
+  margin-top: 47px;
+}
+/* Main content container */
+
+/* Centering the component */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full screen height */
+  width: 100vw; /* Full screen height */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Contact card styling */
+/* Center the form on the screen */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Form styling */
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: 250px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Form labels */
+.contact-form h1 {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #333;
+}
+
+/* Input fields */
+.contact-form input ,textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #222020;
+}
+
+/* Input focus state */
+.contact-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+/* Styling for the success message */
+.success-message {
+  background-color: #d4edda; /* Light green background for success */
+  color: #155724; /* Dark green text for success */
+  border: 1px solid #c3e6cb; /* Green border */
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Optional: Add fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* General container styling */
+.contact-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Title styling */
+
+
+/* Table styling */
+table {
+  width: 800px;
+  margin-left: 250px;
+  border-collapse: collapse; /* Remove gaps between table cells */
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Header row styling */
+th {
+  background-color: #4CAF50; /* Green header background */
+  color: white; /* Text color */
+  padding: 12px; /* Spacing inside header cells */
+  text-align: center; /* Center-align header text */
+  font-weight: bold;
+  border: 1px solid #ddd; /* Light border for separation */
+  font-size: 16px;
+}
+
+/* Table cells styling */
+td {
+  border: 1px solid #ddd; /* Border between cells */
+
+  font-size: 14px;
+  text-align: center; /* Center-align table data */
+  color: #555;
+}
+
+/* Alternate row colors for readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px; /* Reduce font size for small screens */
+  }
+
+  td, th {
+    padding: 8px; /* Adjust cell padding */
+  }
+}
+/* Style for the description column */
+table tbody td:nth-child(4) {
+  max-height: 120px; /* Approximate height for 6 lines */
+  overflow-y: auto; /* Enable vertical scrolling */
+  text-align: justify; /* Justify text for better readability */
+  padding-right: 10px; /* Add padding for a better appearance */
+  word-wrap: break-word; /* Ensure words don't overflow */
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Add custom scrollbar styling for the description cell */
+table tbody td:nth-child(4)::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+table tbody td:nth-child(4)::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+table tbody td:nth-child(4)::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 3px; /* Rounded edges of the scrollbar */
+}
+
+table tbody td:nth-child(4)::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+/* Button styling for "Delete" */
+.btn {
+  background-color: #ff4d4f; /* Bright red for delete button */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  padding: 8px 12px; /* Adjust padding */
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #d9363e; /* Darker red on hover */
+}
+
+/* Link styling for "Update" */
+.btt {
+  background-color: #4caf50; /* Green background for update */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove default underline */
+  padding: 8px 12px; /* Adjust padding for consistency */
+  border-radius: 5px; /* Rounded edges */
+  font-size: 14px; /* Font size */
+  display: inline-block; /* Ensure button-like appearance */
+  margin-left: 10px; /* Add space between buttons */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btt:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Optional: Alignment and spacing for button and link container */
+td {
+  text-align: center; /* Center align buttons within the cell */
+}
+
+td button, td .btt {
+  margin: 5px; /* Add spacing between buttons */
+}
+.Aboutupdate{
+  margin-left: 12px;
+ 
+}
+.Projecttb{
+  margin-left: 188px;
+  margin-top: -70px;
+}
+.add-btn {
+  display: inline-block;
+  background-color: #4caf50; /* Green color */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+.Adcont h1{
+  font-size: 30px;
+  text-align: center;
+}
+/* Styles for the AfterLogin Component */
+.default-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #4a4a4a;
+  background-color: #f4f4f9; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+ 
+}
+.Adcont.Projecttb h1 {
+  font-size: 2rem; /* Slightly larger font */
+  font-weight: bold;
+  margin: 0; /* Remove margin */
+}
